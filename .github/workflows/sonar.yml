@@ -23,9 +23,8 @@ jobs:
           sudo apt update
           sudo apt install -y --no-install-recommends ninja-build libxmu-dev libxi-dev libgl-dev libglu1-mesa-dev libgles2-mesa-dev libwayland-dev libxkbcommon-dev libegl1-mesa-dev libosmesa6 mesa-utils libglvnd-dev
       - uses: friendlyanon/setup-vcpkg@v1
+        with: { committish: 63aa65e65b9d2c08772ea15d25fb8fdb0d32e557 }
       - name: Run cmake
-        env:
-          VCPKG_ROOT: ./vcpkg
         run: |
           mkdir build 
           cd build 
