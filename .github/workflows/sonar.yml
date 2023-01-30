@@ -40,6 +40,7 @@ jobs:
                            libglew-dev \
                            libopenal-dev \
                            libmadlib-dev \
+                           libmad0-dev \
                            uuid-dev
       - name: Install Vcpkg
         run: |
